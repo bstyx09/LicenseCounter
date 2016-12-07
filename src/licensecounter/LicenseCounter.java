@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package licensecounter;
 
 import java.io.BufferedReader;
@@ -14,7 +9,9 @@ import java.util.List;
 
 /**
  *
- * @author Benjamin.Styx
+ * @author Benjamin Styx
+ * benjamin.styx@dynatrace.com
+ * 
  */
 public class LicenseCounter {
 
@@ -30,13 +27,9 @@ public class LicenseCounter {
     static String[] agentInformation;
     static StringBuilder sb = new StringBuilder();
 
-    /**
-     * @param args the command line arguments
-     */
+    //main method
     public static void main(String[] args) {
 
-        args = new String[1];
-        args[0] = "c:/New folder/agents prod.xml";
         //pull in data from file
         readFromFile(args[0]);
         //also add a column for MicroService licenses
@@ -110,7 +103,7 @@ public class LicenseCounter {
             /*
              *
              *
-             * look for java agents only
+             * look for java agents
              *
              *
              */
